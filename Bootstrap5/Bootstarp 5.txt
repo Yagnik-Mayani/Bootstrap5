@@ -1,0 +1,377 @@
+first of all 1 css link file and 2 javascript file bootsrap 5 ni official website perthi copy kari file ma add karvani .
+
+
+
+          Breakpoint                    class-infix               Dimensions
+    
+           x-small                      None                       <576px                              
+           small                        sm                         >=576px 
+           Medium                       md                         >=768px                            
+           Large                        lg                         >=992px
+           Extra-large                  xl                         >=1200px
+           Extra-extra-large            xxl                        >=1400px
+
+
+x-small,small using for smart-phone;
+Medium using for tab;
+Large using for tab & small laptop;
+Extra-large using for big laptop or screen;
+Extra-extra-large using for biggest screen compare to all;
+
+
+                                                                      CLASSES
+
+container           --     using for local
+container-sm        
+container-md
+container-lg
+container-xl
+container-xxl
+container-fluid     --     using for 100% in screen
+
+
+
+                                                                   Basic-structure
+
+<div class="container-fluid"> /  <div class="container">
+<div class="row"> //for create row
+<div class="col"> //for create column
+</div>
+</div>
+</div>
+
+
+                                                                 Grid-Column System
+
+col,col-sm,col-lg,col-md....etc for create column;
+total 1 line/row ma 12 column ave;
+
+example1:- col-lg-12 means 1 div only one row;
+           col-lg-6 means 2 div one row;
+           col-lg-6 col-md-4 means in laptop one row 2 div but in tab 3 div in one row;
+
+example2:- suppose create 5 divs in one row but tene kai rite 1 row ma leva because 1 row ma 12 column rahi sake
+           tena mate auto layout apvu pade
+
+           col-lg means auto;
+           col-md means auto
+           col-lg col-md means auto in both laptop or tab;
+
+
+
+                                                               Row-Column class
+
+
+1 line ma ketli column means ketla div avva joiye tena mate row class no use thay;
+
+example :- <div class"row row-cols-2"> means in one line/row create only 2 div;
+           <div class"row row-cols-2 row-cols-lg-4"> means all device create one line 2 div or lg ma 4 div;
+
+
+
+                                                              Gutter class (padding/margin)
+
+
+gutter class only column/row ma padding/margin Aape pura divne no ape
+gutter class 1 to 5 ma hoy;
+gutter class rem ma hoy che;
+
+1rem means 16px;
+
+1:.25;
+2:.5;
+3: 1;
+4:1.5;
+5:3;
+
+gx:- gx means padding;
+gy:- gy means margin;
+
+example:- <div class="row gx-2 gy-4">
+
+
+                                                                Text-Related class
+
+Text-Alignment class:-
+                  
+                       text-start;
+                       text-center;
+                       text-end;
+
+text-break:- text wrap thay;
+
+
+Text-tranform:-
+
+              text-uppercase;  
+              text-capitalize;
+              text-lowercase;
+
+
+Font-Size:-
+
+             fs-1  2.5 rem;
+             fs-2  2 rem;
+             fs-3  1.75 rem;
+             fs-4  1.5 rem;
+             fs-5  1 rem;
+
+
+Font weight and italics:-
+ 
+                         fw-bold;
+                         fw-bolder;
+                         fw-normal;
+                         fw-lighter;
+                         fst-italic;
+                         fst-normal; 
+
+
+                                                              Utility classes(Margin/Padding)
+
+
+m - for margin;
+p - for padding;
+
+
+t-top(mt/pt);
+b-bottom(mb/pb);
+s-start/left(ms/ps);
+e-end/right(me/pe);
+x-left or right both side set(mx/px);
+y-top or bottom both side set(my/py);
+m-top,right,bottom,left 4 side set(ex: m-3);
+p-top,right,bottom,left 4 side set(ex: p-3);
+
+                  
+                                                             Background & Gradients classes
+
+
+bg-primary -- blue
+bg-secondary -- gray
+bg-success -- green
+bg-danger -- red
+bg-warning -- yellow
+bg-info -- vadli
+bg-dark -- black
+bg-white -- white
+bg-light -- light
+bg-transparent
+
+
+bg-gradient --> color Aacho/deam thay;
+
+
+                                                            Border & Border-radius classes
+
+
+border --> first border lakhvanu jethi border ave;
+
+Add-Border :
+    
+            border-top;
+            border-bottom;
+            border-end;
+            border-start;
+
+Remove-Border :
+ 
+            border-0;
+            border-top-0;
+            border-bottom-0;
+            border-end-0;
+            border-start-0;
+
+Border-Color :
+
+           border-primary;
+           border-secondary;
+           border-success;
+           border-danger;
+           border-warning;
+           border-info;
+           border-light;
+           border-dark;
+           border-white;
+
+Border-Width :
+ 
+           border-1;
+           border-2;
+           border-3;
+           border-4;
+           border-5;
+
+Border-Radius :
+ 
+          rounded;
+          rounded-top;
+          rounded-bottom;
+          rounded-start;
+          rounded-end;
+          rounded-circle;
+          rounded-pill;
+
+Border-Radius-Size :
+
+          rounded-0;
+          rounded-1;
+          rounded-2;
+          rounded-3;
+          
+
+                                                               Text-Color classes
+
+
+text-primary;
+text-secondary;
+text-success;
+text-danger;
+text-warning;
+text-info;
+text-light;
+text-dark
+text-body;
+text-white
+text-muted;
+text-black-50;
+text-white-50;
+
+                                                               Responsive-Image classes
+
+
+img-fluid --> photo ne cover Aape means photo perfect size ma ave screen pramane;
+img-thumbnail --> Aanathi photo ma cover sathe border male te pan radius sathe;
+
+
+                                                               Clear-Float classes(flex)
+
+
+float classes flex display jevu kam ape;
+
+float-start;
+float-end;
+float-none;
+
+All float classes apya pachi last ma "clearfix" class apvo pade;
+
+
+                                                               Button-color classes
+
+btn-primary;
+btn-secondary;
+btn-success;
+btn-danger;
+btn-warning;
+btn-info;
+btn-light;
+btn-dark;
+btn-white;
+
+Outside-Color :
+  
+           btn-outline-primary;
+                                
+                               etc....
+
+ 
+                                                              Create-Card Layout
+
+Steps :
+ 
+       1. create div container;
+       2. create col div for set image;
+       3. create image tag;
+       4. create card div;
+       5. create card-body div;
+       6. create card-title in any heding tag;
+       7. create card-text in p tag;
+       8. create a tag for button;
+
+                       
+                                                               
+                                                              Hide-Element
+
+hidden all --> d-none;
+visible all --> d.block;
+hidden only lg --> d-lg-none d-xl-block;
+visible only md --> d-md-block d-lg-none;
+
+
+                                                              Flex classes
+
+
+d-flex --> display flex thay;
+
+flex-row-reverse --> All div reverse thay row ma;
+flex-column-reverse --> All div reverse thay column ma;
+justify-content-center/end/start --> All div center/end/start ma ave row ma;
+align-items-end/center/start --> All div end/center/start ma ave column ma;
+align-self-end/start/center --> je div ne end/start/center ma rakhvo hoy tene rakhi sakay;
+flex-grow-1 --> div vadharani space pote lai le;
+flex-wrap --> div wrap thay;
+
+order --> div exchange karva
+ 
+               example :- <div class="container">
+                          <div class="d-flex">
+                          <div class="order-3">1</div>
+                          <div class="order-1">2</div>
+                          <div class="order-2">3</div>
+                          </div>
+                          </div>
+
+                      
+
+                                                             Table classes
+
+
+first of all create 1 div of container after second div create col-12 after create <table> tag;
+
+1.<table class="table">
+
+class banavano table tag ma;
+
+2.<table class="table table-primary>
+
+table ne background-color male;
+
+3.<table class="table table-striped">
+
+table ma odd even ma mastno color male;
+
+4.<table class="table-hover">
+
+table ne hover male;
+
+5.<tr class="table-active">
+
+tr active batave means black gray color dekhay;
+
+6.<table class="table table-bordered">
+
+table ne border male;
+
+7.<table class="table table-bordered border-primary">
+
+border ne color male;
+
+8.<table class="table table-borderless">
+
+table mathi border remove thay;
+
+9.<table class="table table-sm">
+
+table ne size male;
+
+
+responsive table :-
+
+                   <table> tag pehla 1 div banavvano and class nu name "table-responsive" apvanu;
+
+
+                        
+
+
+
+
